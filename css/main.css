@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: blue;
+  height: 200px;
+  font-size: xx-large;
+}
+.header p {
+  color: pink;
+}
+
+/*# sourceMappingURL=main.css.map */
