@@ -89,4 +89,52 @@
   font-size: 0.5em;
 }
 
+.customer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.customer div {
+  display: flex;
+  flex-direction: row;
+  width: 85vw;
+  margin: 0 auto;
+}
+.customer div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.customer div div h3 {
+  text-transform: uppercase;
+  color: #747474;
+  font-size: 0.9em;
+}
+.customer div div p {
+  font-style: italic;
+  color: #747474;
+  font-size: 0.5em;
+}
+.customer div div a {
+  text-decoration: none;
+  color: white;
+  background-color: #e83b89;
+  width: 120px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 3px;
+}
+.customer div div img {
+  width: 160%;
+  position: absolute;
+  right: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
 /*# sourceMappingURL=main.css.map */
