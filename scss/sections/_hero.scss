@@ -1,0 +1,31 @@
+.hero {
+    background-image: url("/images/main.jpg");
+    background-size: 290%;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 200px;
+
+    h1 {
+        font-size: 1.2em;
+
+        span {
+            display: block;
+            font-size: 1.6em;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: #e83b89;
+        margin: 0 auto;
+        width: 70px;
+        height: 28px;
+ padding: 3px;      
+    }
+}
