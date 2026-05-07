@@ -1,6 +1,9 @@
+@use '../abstracts/variables';
+
+
 .footer {
     width: 90%;
-    background-color: #444444;
+    background-color: variables.$bgcolor-footer;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -10,18 +13,18 @@
     height: 80px;
     
     &__marque {
-        font-family: 'Crete Round', sans-serif;
-        color: white;
+        font-family: variables.$font-marque-footer;
+        color: variables.$color-marque-footer;
         font-size: large;
         font-weight: bold;
 
         span {
-            color: #e83b89;
+            color: variables.$span-footer;
         }
     }
 
     &__copyright {
-        color: #747474;
+        color: variables.$color-copyright-footer; 
         font-size: 0.6em;
         font-weight: bold;
     }    

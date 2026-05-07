@@ -1,11 +1,15 @@
+@use '../abstracts/variables';
+
+
+
 .quality {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    color: #747474;
-    font-family: 'Roboto', sans-serif;
+    color: variables.$color-font-quality;
+    font-family: variables.$font-quality;
 
     div {
         display: flex;

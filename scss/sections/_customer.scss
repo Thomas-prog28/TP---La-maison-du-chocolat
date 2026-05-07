@@ -1,8 +1,11 @@
+@use '../abstracts/variables';
+
+
 .customer {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    font-family: variables.$font-customer;
 
     div {
         display: flex;
@@ -19,24 +22,22 @@
             overflow: hidden;
             position: relative;
 
-            
-
             h3 {
                 text-transform: uppercase;
-                color: #747474;
+                color: variables.$color-font-customer;
                 font-size: 0.9em;
             }
 
             p {
                 font-style: italic;
-                color: #747474;
+                color: variables.$color-font-customer;
                 font-size: 0.5em;
             }
 
             a {
                 text-decoration: none;
-                color: white;
-                background-color: #e83b89; 
+                color: variables.$color-link-customer;
+                background-color: variables.$bgcolor-btn-customer;
                 width: 120px;
                 height: 25px;
                 margin: 0 auto;

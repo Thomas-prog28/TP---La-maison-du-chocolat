@@ -1,9 +1,13 @@
+@use '../abstracts/variables';
+
+
+
 .hero {
     background-image: url("/images/main.jpg");
     background-size: 290%;
     background-position: center;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: variables.$font-hero;
+    color: variables.$color-hero;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -21,8 +25,8 @@
 
     a {
         text-decoration: none;
-        color: white;
-        background-color: #e83b89;
+        color: variables.$color-hero;
+        background-color: variables.$bgcolor-btn-hero;
         margin: 0 auto;
         width: 70px;
         height: 28px;

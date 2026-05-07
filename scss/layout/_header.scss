@@ -1,16 +1,24 @@
+// $font-titre: 'Crete Round', sans-serif;
+// $color-font: #747474;
+// $span-titre: #e83b89;
+// $font-link: 'Roboto', sans-serif;
+
+@use '../abstracts/variables';
+
+
 .header {
     margin: 20px;
 
     p {
-        font-family: 'Crete Round', serif;
+        font-family: variables.$font-titre;
         text-align: center;
-        color: #747474;
+        color: variables.$color-font;
         font-size: large;
         font-weight: bold;
         margin-bottom: 15px;
 
         span {
-            color: #e83b89;
+            color: variables.$span-titre;
         }
     }
 
@@ -26,8 +34,8 @@
 
     a {
         text-decoration: none;
-        color: #747474;
-        font-family: 'Roboto', sans-serif;
+        color: variables.$color-font;
+        font-family: variables.$font-link;
         font-weight: 700;
         font-size: 0.6em;
     }

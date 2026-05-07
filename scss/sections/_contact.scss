@@ -1,9 +1,11 @@
+@use '../abstracts/variables';
+
 .contact {
     margin: 60px auto;
     width: 85%;
-    font-family: 'Roboto', sans-serif;
+    font-family: variables.$font-contact;
     text-align: center;
-    color: #747474;
+    color: variables.$color-font-contact;
 
     h2 {
         text-transform: uppercase;
@@ -37,12 +39,12 @@
     }
 
     &__btn {
-        background-color: #e83b89;
+        background-color: variables.$bgcolor-btn-contact;
         text-transform: uppercase;
         font-size: 0.7em;
         font-weight: 600;
         border: none;
-        color: white;
+        color: variables.$color-link-contact;
         width: 27px;
         height: 27px;
         border-radius: 2px;
