@@ -97,20 +97,24 @@
             <p>Nous sommes une entreprise de chocolaterie proposant toutes sortes de chocolats mais aussi des cours pour
                 vous permettre de préparer vous-même vos chocolats.</p>
             <form action="">
-                <label for="nom">Nom</label>
-                <input type="text" placeholder="Votre nom">
-                <label for="email">Email</label>
-                <input type="text" placeholder="Votre email">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Votre email">
+                </div>
 
-                <input type="submit" value="ok">
+                <input type="submit" value="ok" class="contact__btn">
             </form>
         </section>
 
     </main>
 
     <footer class="footer">
-        <p>La Maison du Chocolat.</p>
-        <p>Copyright &copy; Tous droits réservés</p>
+        <p class="footer__marque">La Maison du <span>Chocolat.</span></p>
+        <p class="footer__copyright">Copyright &copy; Tous droits réservés</p>
     </footer>
 </body>
 

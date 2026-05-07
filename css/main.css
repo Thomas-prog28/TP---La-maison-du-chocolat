@@ -15,7 +15,7 @@
   font-weight: bold;
   margin-bottom: 15px;
 }
-.header span {
+.header p span {
   color: #e83b89;
 }
 .header ul {
@@ -59,7 +59,8 @@
   margin: 0 auto;
   width: 70px;
   height: 28px;
-  padding: 3px;
+  padding: 4px;
+  border-radius: 2px;
 }
 
 .quality {
@@ -128,6 +129,7 @@
   height: 25px;
   margin: 0 auto;
   padding: 3px;
+  border-radius: 2px;
 }
 .customer div div img {
   width: 160%;
@@ -135,6 +137,75 @@
   right: 10px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+
+.contact {
+  margin: 60px auto;
+  width: 85%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #747474;
+}
+.contact h2 {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 260px;
+  border-bottom: 1px #bdecf6 solid;
+  padding-bottom: 14px;
+}
+.contact p {
+  font-size: 0.5em;
+  margin: 15px auto;
+}
+.contact div {
+  margin-bottom: 8px;
+}
+.contact div label {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.contact div input {
+  height: 25px;
+  font-size: 0.6em;
+  width: 150px;
+  border-width: 1px;
+}
+.contact__btn {
+  background-color: #e83b89;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  border: none;
+  color: white;
+  width: 27px;
+  height: 27px;
+  border-radius: 2px;
+}
+
+.footer {
+  width: 90%;
+  background-color: #444444;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 80px;
+}
+.footer__marque {
+  font-family: "Crete Round", sans-serif;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.footer__marque span {
+  color: #e83b89;
+}
+.footer__copyright {
+  color: #747474;
+  font-size: 0.6em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

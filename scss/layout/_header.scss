@@ -8,11 +8,13 @@
         font-size: large;
         font-weight: bold;
         margin-bottom: 15px;
+
+        span {
+            color: #e83b89;
+        }
     }
 
-    span {
-        color: #e83b89;
-    }
+
 
     ul {
         list-style: none;

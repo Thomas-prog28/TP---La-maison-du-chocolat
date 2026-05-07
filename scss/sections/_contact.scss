@@ -1,0 +1,50 @@
+.contact {
+    margin: 60px auto;
+    width: 85%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #747474;
+
+    h2 {
+        text-transform: uppercase;
+        display: inline-block;
+        width: 260px;
+        border-bottom: 1px #bdecf6 solid;
+        padding-bottom: 14px;
+    }
+
+    p {
+        font-size: 0.5em;
+        margin: 15px auto;
+    }
+
+    div {
+        margin-bottom: 8px;
+
+
+        label {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        input {
+            height: 25px;
+            font-size: 0.6em;
+            width: 150px;
+            border-width: 1px;
+
+        }
+    }
+
+    &__btn {
+        background-color: #e83b89;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        font-weight: 600;
+        border: none;
+        color: white;
+        width: 27px;
+        height: 27px;
+        border-radius: 2px;
+    }
+}

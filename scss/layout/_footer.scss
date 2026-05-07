@@ -1,0 +1,29 @@
+.footer {
+    width: 90%;
+    background-color: #444444;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 80px;
+    
+    &__marque {
+        font-family: 'Crete Round', sans-serif;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+
+        span {
+            color: #e83b89;
+        }
+    }
+
+    &__copyright {
+        color: #747474;
+        font-size: 0.6em;
+        font-weight: bold;
+    }    
+    
+}
