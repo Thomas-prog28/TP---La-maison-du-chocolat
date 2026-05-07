@@ -24,69 +24,61 @@
 
 <body>
     <header class="header">
-        <p>La Maison du <span>Chocolat.</span></p>
+        <p class="header__titre">La Maison du <span class="header__span">Chocolat.</span></p>
         <nav>
-            <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">LA CHOCOLATERIE</a></li>
-                <li><a href="#">RECETTE</a></li>
-                <li><a href="#">ACTUS</a></li>
-                <li><a href="#">CONTACT</a></li>
+            <ul class="header__liste">
+                <li><a href="#" class="header__link">ACCUEIL</a></li>
+                <li><a href="#" class="header__link">LA CHOCOLATERIE</a></li>
+                <li><a href="#" class="header__link">RECETTE</a></li>
+                <li><a href="#" class="header__link">ACTUS</a></li>
+                <li><a href="#" class="header__link">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>NOUVELLE SAISON <span>NOUVEAUX CHOCOLATS</span></h1>
-            <a href="#">Par ici</a>
+            <h1 class="hero__title">NOUVELLE SAISON <span class="hero__span">NOUVEAUX CHOCOLATS</span></h1>
+            <button href="#" class="hero__btn">Par ici</button>
         </section>
 
         <section class="quality">
-            <div>
-                <div>
-                    <img src="images/steps-icon-1.jpg" alt="médaille">
-                </div>
-                <h3>qualité</h3>
-                <p>Une charte en 36 points encadre la qualité de nos chocolats et l'activité de nos boutiques.</p>
-            </div>
-            <div>
-                <div>
-                    <img src="images/steps-icon-2.jpg" alt="green grass">
-                </div>
-                <h3>ecologie</h3>
-                <p>Nous privilégions et encourageons les modes de lecture, de récolte et de préparatino 100% naturels.
+            <article class="quality__item">
+                <img class="quality__image" src="images/steps-icon-1.jpg" alt="médaille">
+                <h3 class="quality__title">qualité</h3>
+                <p class="quality__description">Une charte en 36 points encadre la qualité de nos chocolats et
+                    l'activité de nos boutiques.</p>
+            </article>
+            <article class="quality__item">
+                <img class="quality__image" src="images/steps-icon-2.jpg" alt="green grass">
+                <h3 class="quality__title">ecologie</h3>
+                <p class="quality__description">Nous privilégions et encourageons les modes de lecture, de récolte et de
+                    préparatino 100% naturels.
                 </p>
-            </div>
-            <div>
-                <div>
-                    <img src="images/steps-icon-3.png" alt="main together">
-                </div>
-                <h3>equitable</h3>
-                <p>La prime du commerce équitable et le prix minimum garantissent aux petits producteurs une juste
+            </article>
+            <article class="quality__item">
+                <img class="quality__image" src="images/steps-icon-3.png" alt="main together">
+                <h3 class="quality__title">equitable</h3>
+                <p class="quality__description">La prime du commerce équitable et le prix minimum garantissent aux
+                    petits producteurs une juste
                     rémunération</p>
-            </div>
+            </article>
         </section>
 
         <section class="customer">
-            <div>
-                <div>
-                    <h3>le club</h3>
-                    <p>Inscrivez-vous dès maintenant et profitez de nos offres spéciales !</p>
-                    <a href="#">Plus d'infos</a>
-                </div>
-                <div>
-                    <img src="images/article-image-1.jpg" alt="carte chocolat">
+            <div class="customer__card customer--club">
+                <div class="customer__content">
+                    <h3 class="customer__title">le club</h3>
+                    <p class="customer__description">Inscrivez-vous dès maintenant et profitez de nos offres spéciales !
+                    </p>
+                    <button class="customer__btn">Plus d'infos</button>
                 </div>
             </div>
-            <div>
-                <div>
-                    <h3>nos actus</h3>
-                    <p>Offres spéciales, nouvelles gammes de produits, Evènements...</p>
-                    <a href="#">Plus d'infos</a>
-                </div>
-                <div>
-                    <img src="images/article-image-2.jpg" alt="cheescake choco">
+            <div class="customer__card customer--actu">
+                <div class="customer__content">
+                    <h3 class="customer__title">nos actus</h3>
+                    <p class="customer__description">Offres spéciales, nouvelles gammes de produits, Evènements...</p>
+                    <button class="customer__btn">Plus d'infos</a>
                 </div>
             </div>
         </section>

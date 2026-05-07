@@ -1,16 +1,16 @@
 @use '../abstracts/variables';
-
+@use '../abstracts/mixins';
 
 .footer {
+    @include mixins.center;
     width: 90%;
     background-color: variables.$bgcolor-footer;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 12px;
     height: 80px;
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
     
     &__marque {
         font-family: variables.$font-marque-footer;

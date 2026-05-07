@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts/variables' as*;
 
 
 
@@ -6,31 +6,39 @@
     background-image: url("/images/main.jpg");
     background-size: 290%;
     background-position: center;
-    font-family: variables.$font-hero;
-    color: variables.$color-hero;
+    font-family: $font-hero;
+    color: $color-hero;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
     height: 200px;
-
-    h1 {
-        font-size: 1.2em;
-
-        span {
-            display: block;
-            font-size: 1.6em;
-        }
+    @media(min-width: 768px) {
+        height: 300px;
+        background-size: 130%;
     }
 
-    a {
-        text-decoration: none;
-        color: variables.$color-hero;
-        background-color: variables.$bgcolor-btn-hero;
+    &__title {
+        font-size: 2em;
+    }
+
+    &__span {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    &__btn {
+        color: $color-hero;
+        background-color: $bgcolor-btn-hero;
         margin: 0 auto;
         width: 70px;
         height: 28px;
         padding: 4px;
         border-radius: 2px;
+        border: none;
+
+        @media(min-width: 768px) {
+            margin-bottom: 40px;
+        }
     }
 }

@@ -7,7 +7,15 @@
 .header {
   margin: 20px;
 }
-.header p {
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+.header__titre {
   font-family: "Crete Round", sans-serif;
   text-align: center;
   color: #747474;
@@ -15,17 +23,22 @@
   font-weight: bold;
   margin-bottom: 15px;
 }
-.header p span {
+.header__span {
   color: #e83b89;
 }
-.header ul {
+.header__liste {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 10px;
 }
-.header a {
+@media (min-width: 768px) {
+  .header__liste {
+    margin-top: 15px;
+  }
+}
+.header__link {
   text-decoration: none;
   color: #747474;
   font-family: "Roboto", sans-serif;
@@ -45,15 +58,20 @@
   justify-content: space-evenly;
   height: 200px;
 }
-.hero h1 {
+@media (min-width: 768px) {
+  .hero {
+    height: 300px;
+    background-size: 130%;
+  }
+}
+.hero__title {
+  font-size: 2em;
+}
+.hero__span {
+  display: block;
   font-size: 1.2em;
 }
-.hero h1 span {
-  display: block;
-  font-size: 1.6em;
-}
-.hero a {
-  text-decoration: none;
+.hero__btn {
   color: white;
   background-color: #e83b89;
   margin: 0 auto;
@@ -61,67 +79,80 @@
   height: 28px;
   padding: 4px;
   border-radius: 2px;
+  border: none;
+}
+@media (min-width: 768px) {
+  .hero__btn {
+    margin-bottom: 40px;
+  }
 }
 
 .quality {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
+  gap: 25px;
+  padding: 25px;
   color: #747474;
   font-family: "Roboto", sans-serif;
 }
-.quality div {
+@media (min-width: 768px) {
+  .quality {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+.quality__item {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.quality div img {
+.quality__image {
   margin: 0 auto;
   width: 20%;
   height: auto;
 }
-.quality div h3 {
+.quality__title {
   text-transform: uppercase;
   font-size: 0.9em;
 }
-.quality div p {
+.quality__description {
   font-size: 0.5em;
 }
 
 .customer {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
-.customer div {
+.customer__card {
   display: flex;
   flex-direction: row;
+  height: 180px;
   width: 85vw;
   margin: 0 auto;
 }
-.customer div div {
+.customer__card__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   text-align: center;
   height: 150px;
-  overflow: hidden;
-  position: relative;
 }
-.customer div div h3 {
+.customer__card__content__title {
   text-transform: uppercase;
   color: #747474;
   font-size: 0.9em;
 }
-.customer div div p {
+.customer__card__content__description {
   font-style: italic;
   color: #747474;
   font-size: 0.5em;
 }
-.customer div div a {
+.customer__card__content__btn {
   text-decoration: none;
   color: white;
   background-color: #e83b89;
@@ -131,12 +162,22 @@
   padding: 3px;
   border-radius: 2px;
 }
-.customer div div img {
+.customer__card__content img {
   width: 160%;
   position: absolute;
   right: 10px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+.customer--club {
+  background-image: url("/images/article-image-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customer--actu {
+  background-image: url("/images/article-image-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contact {
@@ -183,15 +224,20 @@
 }
 
 .footer {
-  width: 90%;
-  background-color: #444444;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  background-color: #444444;
+  margin: 0 auto;
   gap: 12px;
   height: 80px;
+}
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
 }
 .footer__marque {
   font-family: "Crete Round", sans-serif;

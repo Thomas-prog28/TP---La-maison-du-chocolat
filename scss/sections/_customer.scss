@@ -1,43 +1,43 @@
-@use '../abstracts/variables';
-
+@use '../abstracts/variables' as*;
 
 .customer {
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    font-family: variables.$font-customer;
+    font-family: $font-customer;
 
-    div {
+    &__card {
         display: flex;
         flex-direction: row;
+        height: 180px;
         width: 85vw;
         margin: 0 auto;
 
-        div {
+
+
+
+        &__content {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             text-align: center;
             height: 150px;
-            overflow: hidden;
-            position: relative;
 
-            h3 {
+            &__title {
                 text-transform: uppercase;
-                color: variables.$color-font-customer;
+                color: $color-font-customer;
                 font-size: 0.9em;
             }
 
-            p {
+            &__description {
                 font-style: italic;
-                color: variables.$color-font-customer;
+                color: $color-font-customer;
                 font-size: 0.5em;
             }
 
-            a {
+            &__btn {
                 text-decoration: none;
-                color: variables.$color-link-customer;
-                background-color: variables.$bgcolor-btn-customer;
+                color: $color-link-customer;
+                background-color: $bgcolor-btn-customer;
                 width: 120px;
                 height: 25px;
                 margin: 0 auto;
@@ -53,5 +53,17 @@
                 border-bottom-right-radius: 7px;
             }
         }
+    }
+
+    &--club {
+        background-image: url('/images/article-image-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--actu {
+        background-image: url('/images/article-image-2.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }

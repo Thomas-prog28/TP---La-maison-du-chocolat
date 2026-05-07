@@ -1,35 +1,41 @@
-@use '../abstracts/variables';
-
-
+@use '../abstracts/variables' as*;
 
 .quality {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    color: variables.$color-font-quality;
-    font-family: variables.$font-quality;
+    gap: 25px;
+    padding: 25px;
+    color: $color-font-quality;
+    font-family: $font-quality;
 
-    div {
+    @media(min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    &__item {
         display: flex;
         flex-direction: column;
         gap: 20px;
-
-
-        img {
-            margin: 0 auto;
-            width: 20%;
-            height: auto;
-        }
-
-        h3 {
-            text-transform: uppercase;
-            font-size: 0.9em;
-        }
-
-        p {
-            font-size: 0.5em;
-        }
     }
+
+    &__image {
+        margin: 0 auto;
+        width: 20%;
+        height: auto;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+    &__description {
+        font-size: 0.5em;
+    }
+
 }

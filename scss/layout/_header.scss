@@ -1,41 +1,45 @@
-// $font-titre: 'Crete Round', sans-serif;
-// $color-font: #747474;
-// $span-titre: #e83b89;
-// $font-link: 'Roboto', sans-serif;
-
-@use '../abstracts/variables';
-
+@use '../abstracts/variables' as*;
 
 .header {
     margin: 20px;
 
-    p {
-        font-family: variables.$font-titre;
+    @media(min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    &__titre {
+        font-family: $font-titre;
         text-align: center;
-        color: variables.$color-font;
+        color: $color-font;
         font-size: large;
         font-weight: bold;
         margin-bottom: 15px;
 
-        span {
-            color: variables.$span-titre;
-        }
     }
 
+    &__span {
+        color: $span-titre;
+    }
 
-
-    ul {
+    &__liste {
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 10px;
+
+        @media(min-width: 768px) {
+            margin-top: 15px;
+        }
     }
 
-    a {
+    &__link {
         text-decoration: none;
-        color: variables.$color-font;
-        font-family: variables.$font-link;
+        color: $color-font;
+        font-family: $font-link;
         font-weight: 700;
         font-size: 0.6em;
     }
