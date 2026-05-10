@@ -4,26 +4,23 @@
 @use '../base/base' as*;
 
 .customer {
-    margin-top: 40px;
     @include center-col;
-   
-    gap: 10px;
-    
+    margin-top: 40px;       
+    gap: 10px;    
     @media(min-width: 768px) {
         @include center-row;
         margin: 30px auto;
         width: 80vw;
-
     }
 
     &--club {
-        background-image: url('/images/article-image-1.jpg');
         @include img;
+        background-image: url('/images/article-image-1.jpg');
     }
 
     &--actu {
-        background-image: url('/images/article-image-2.jpg');
         @include img;
+        background-image: url('/images/article-image-2.jpg');
     }
 
     &__card {
@@ -50,8 +47,8 @@
     }
 
     &__description {
-        font-style: italic;
-       @include descrip;
+        @include descrip;
+        font-style: italic;       
         padding: 5px;
         margin-top: 30px;
     }

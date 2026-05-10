@@ -3,13 +3,10 @@
 @use '../base/base' as*;
 
 .quality {
+    @include center_col;
     text-align: center;
-   @include center_col;
     gap: 25px;
     padding: 25px;
-   
- 
-
     @media(min-width: 768px) {
         @include center_row;
         margin-top: 10px;
@@ -27,7 +24,7 @@
     }
 
     &__title {
-       @include title;
+        @include title;
     }
 
     &__description {

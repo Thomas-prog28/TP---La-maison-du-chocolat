@@ -28,11 +28,11 @@
   color: #e83b89;
 }
 .header__liste {
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  list-style: none;
   gap: 10px;
 }
 @media (min-width: 768px) {
@@ -49,15 +49,15 @@
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("/images/main.jpg");
   background-size: 290%;
   background-position: center;
   font-family: "Roboto", sans-serif;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   gap: 10px;
   height: 200px;
@@ -106,11 +106,11 @@
 }
 
 .quality {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 25px;
   padding: 25px;
 }
@@ -153,11 +153,11 @@
 }
 
 .customer {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   gap: 10px;
 }
 @media (min-width: 768px) {
@@ -171,16 +171,16 @@
   }
 }
 .customer--club {
-  background-image: url("/images/article-image-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("/images/article-image-1.jpg");
 }
 .customer--actu {
-  background-image: url("/images/article-image-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("/images/article-image-2.jpg");
 }
 .customer__card {
   display: flex;
@@ -208,10 +208,10 @@
   font-family: "Roboto", sans-serif;
 }
 .customer__description {
-  font-style: italic;
   font-family: "Roboto", sans-serif;
   font-size: 0.5em;
   color: #747474;
+  font-style: italic;
   padding: 5px;
   margin-top: 30px;
 }
@@ -299,7 +299,7 @@
   background-color: #444444;
   margin: 0 auto;
   gap: 12px;
-  height: 80px;
+  height: 90px;
 }
 .footer__marque {
   font-family: "Crete Round", sans-serif;
@@ -311,8 +311,9 @@
   color: #e83b89;
 }
 .footer__copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.5em;
   color: #747474;
-  font-size: 0.6em;
   font-weight: bold;
 }
 

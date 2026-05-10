@@ -7,9 +7,8 @@
     background-color: $bgcolor-footer;
     margin: 0 auto;
     gap: 12px;
-    height: 80px;
-    
-    
+    height: 90px;
+
     &__marque {
         font-family: $font-marque;
         color: $color-marque-footer;
@@ -17,14 +16,13 @@
         font-weight: bold;
     }
 
-     &__span {
-            color: $span-footer;
-        }
+    &__span {
+        color: $span-marque;
+    }
 
     &__copyright {
-        color: $color-copyright-footer; 
-        font-size: 0.6em;
+        @include descrip;
         font-weight: bold;
-    }    
-    
+    }
+
 }

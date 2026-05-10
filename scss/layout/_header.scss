@@ -3,7 +3,6 @@
 
 .header {
     margin: 20px;
-
     @media(min-width: 768px) {
         @include center_row;
         gap: 80px;
@@ -12,22 +11,20 @@
     &__titre {
         font-family: $font-marque;
         text-align: center;
-        color: $color-font;
+        color: $color-global;
         font-size: large;
         font-weight: bold;
         margin-bottom: 15px;
-
     }
 
     &__span {
-        color: $span-titre;
+        color: $span-marque;
     }
 
     &__liste {
-        list-style: none;
         @include center_row;
+        list-style: none;
         gap: 10px;
-
         @media(min-width: 768px) {
             margin-top: 15px;
         }
