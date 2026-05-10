@@ -8,20 +8,18 @@
     margin: 0 auto;
     gap: 12px;
     height: 80px;
-    @media(min-width: 768px) {
-        flex-direction: row;
-    }
+    
     
     &__marque {
         font-family: variables.$font-marque-footer;
         color: variables.$color-marque-footer;
         font-size: large;
         font-weight: bold;
+    }
 
-        span {
+     &__span {
             color: variables.$span-footer;
         }
-    }
 
     &__copyright {
         color: variables.$color-copyright-footer; 

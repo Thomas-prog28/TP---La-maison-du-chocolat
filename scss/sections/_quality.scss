@@ -36,6 +36,10 @@
 
     &__description {
         font-size: 0.5em;
-    }
 
+        @media(min-width: 768px) {
+            padding: 0 38px 0 38px;
+
+        }
+    }
 }

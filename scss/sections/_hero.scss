@@ -1,7 +1,5 @@
 @use '../abstracts/variables' as*;
 
-
-
 .hero {
     background-image: url("/images/main.jpg");
     background-size: 290%;
@@ -19,12 +17,21 @@
     }
 
     &__title {
-        font-size: 2em;
+        font-size: 1.5em;
+        padding-top: 15px;
+        @media(min-width: 768px) {
+        font-size: 1.8em;
+        padding-top: 20px;
+        }
     }
 
     &__span {
         display: block;
+        height: 50px;
         font-size: 1.2em;
+        @media(min-width: 768px) {
+        font-size: 1.4em;
+        }
     }
 
     &__btn {

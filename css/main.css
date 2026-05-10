@@ -65,11 +65,24 @@
   }
 }
 .hero__title {
-  font-size: 2em;
+  font-size: 1.5em;
+  padding-top: 15px;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 1.8em;
+    padding-top: 20px;
+  }
 }
 .hero__span {
   display: block;
+  height: 50px;
   font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  .hero__span {
+    font-size: 1.4em;
+  }
 }
 .hero__btn {
   color: white;
@@ -122,62 +135,79 @@
 .quality__description {
   font-size: 0.5em;
 }
+@media (min-width: 768px) {
+  .quality__description {
+    padding: 0 38px 0 38px;
+  }
+}
 
 .customer {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .customer {
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    width: 80vw;
+  }
+}
+.customer--club {
+  background-image: url("/images/article-image-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.customer--actu {
+  background-image: url("/images/article-image-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .customer__card {
   display: flex;
-  flex-direction: row;
-  height: 180px;
-  width: 85vw;
+  height: 175px;
+  width: 80vw;
   margin: 0 auto;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
-.customer__card__content {
+.customer__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   text-align: center;
-  height: 150px;
+  height: auto;
+  width: 123px;
+  background-color: white;
+  padding: 15px;
 }
-.customer__card__content__title {
+.customer__title {
   text-transform: uppercase;
   color: #747474;
   font-size: 0.9em;
 }
-.customer__card__content__description {
+.customer__description {
   font-style: italic;
   color: #747474;
   font-size: 0.5em;
+  padding: 5px;
+  margin-top: 30px;
 }
-.customer__card__content__btn {
+.customer__btn {
   text-decoration: none;
+  border: none;
+  font-size: 0.7em;
   color: white;
   background-color: #e83b89;
-  width: 120px;
-  height: 25px;
+  width: 80px;
+  height: 20px;
   margin: 0 auto;
-  padding: 3px;
   border-radius: 2px;
-}
-.customer__card__content img {
-  width: 160%;
-  position: absolute;
-  right: 10px;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-}
-.customer--club {
-  background-image: url("/images/article-image-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.customer--actu {
-  background-image: url("/images/article-image-2.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .contact {
@@ -187,29 +217,46 @@
   text-align: center;
   color: #747474;
 }
-.contact h2 {
+@media (min-width: 768px) {
+  .contact__formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+}
+.contact__titre {
   text-transform: uppercase;
   display: inline-block;
   width: 260px;
   border-bottom: 1px #bdecf6 solid;
   padding-bottom: 14px;
 }
-.contact p {
+.contact__description {
   font-size: 0.5em;
   margin: 15px auto;
 }
-.contact div {
-  margin-bottom: 8px;
+@media (min-width: 768px) {
+  .contact__description {
+    padding: 0 80px 0 80px;
+  }
 }
-.contact div label {
-  font-size: 0.9em;
+.contact__field {
+  margin-bottom: 10px;
+}
+.contact__field label {
+  font-size: 0.7em;
   font-weight: 600;
+  margin-right: 4px;
 }
-.contact div input {
+.contact__field input {
   height: 25px;
   font-size: 0.6em;
   width: 150px;
   border-width: 1px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  padding: 8px;
 }
 .contact__btn {
   background-color: #e83b89;
@@ -234,18 +281,13 @@
   gap: 12px;
   height: 80px;
 }
-@media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-  }
-}
 .footer__marque {
   font-family: "Crete Round", sans-serif;
   color: white;
   font-size: large;
   font-weight: bold;
 }
-.footer__marque span {
+.footer__span {
   color: #e83b89;
 }
 .footer__copyright {
