@@ -1,17 +1,16 @@
 @use '../abstracts/variables' as*;
+@use '../abstracts/mixins' as*;
 
 .header {
     margin: 20px;
 
     @media(min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include center_row;
         gap: 80px;
     }
 
     &__titre {
-        font-family: $font-titre;
+        font-family: $font-marque;
         text-align: center;
         color: $color-font;
         font-size: large;
@@ -26,9 +25,7 @@
 
     &__liste {
         list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include center_row;
         gap: 10px;
 
         @media(min-width: 768px) {
@@ -39,7 +36,7 @@
     &__link {
         text-decoration: none;
         color: $color-font;
-        font-family: $font-link;
+        font-family: $font-global;
         font-weight: 700;
         font-size: 0.6em;
     }

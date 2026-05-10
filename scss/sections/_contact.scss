@@ -1,17 +1,18 @@
-@use '../abstracts/variables';
+@use '../abstracts/variables' as*;
+@use '../abstracts/mixins' as*;
+@use '../base/buttons' as*;
 
 .contact {
     margin: 60px auto;
     width: 85%;
-    font-family: variables.$font-contact;
+    font-family: $font-global;
     text-align: center;
-    color: variables.$color-font-contact;
+    color: $color-global;
 
     &__formulaire {
         @media(min-width: 768px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            @include center_row;
+            gap: 40px;
             margin-top: 40px;
         }
     }
@@ -25,7 +26,7 @@
     }
 
     &__description {
-        font-size: 0.5em;
+        @include descrip;
         margin: 15px auto;
 
         @media(min-width: 768px) {
@@ -55,15 +56,10 @@
     }
 
     &__btn {
-        background-color: variables.$bgcolor-btn-contact;
+       @include button;
         text-transform: uppercase;
-        font-size: 0.7em;
         font-weight: 600;
-        border: none;
-        color: variables.$color-link-contact;
         width: 27px;
         height: 27px;
-        border-radius: 2px;
     }
-
 }

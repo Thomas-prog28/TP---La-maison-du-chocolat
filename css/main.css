@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 80px;
   }
 }
@@ -31,6 +32,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 @media (min-width: 768px) {
@@ -54,8 +56,10 @@
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  justify-content: space-evenly;
+  gap: 10px;
   height: 200px;
 }
 @media (min-width: 768px) {
@@ -85,14 +89,15 @@
   }
 }
 .hero__btn {
-  color: white;
   background-color: #e83b89;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-size: 0.7em;
   margin: 0 auto;
   width: 70px;
   height: 28px;
   padding: 4px;
-  border-radius: 2px;
-  border: none;
 }
 @media (min-width: 768px) {
   .hero__btn {
@@ -104,10 +109,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
   padding: 25px;
-  color: #747474;
-  font-family: "Roboto", sans-serif;
 }
 @media (min-width: 768px) {
   .quality {
@@ -121,6 +126,8 @@
 .quality__item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .quality__image {
@@ -131,9 +138,13 @@
 .quality__title {
   text-transform: uppercase;
   font-size: 0.9em;
+  color: #747474;
+  font-family: "Roboto", sans-serif;
 }
 .quality__description {
+  font-family: "Roboto", sans-serif;
   font-size: 0.5em;
+  color: #747474;
 }
 @media (min-width: 768px) {
   .quality__description {
@@ -145,13 +156,16 @@
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 @media (min-width: 768px) {
   .customer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 30px auto;
     width: 80vw;
   }
@@ -179,7 +193,8 @@
 .customer__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: auto;
   width: 123px;
@@ -188,26 +203,27 @@
 }
 .customer__title {
   text-transform: uppercase;
-  color: #747474;
   font-size: 0.9em;
+  color: #747474;
+  font-family: "Roboto", sans-serif;
 }
 .customer__description {
   font-style: italic;
-  color: #747474;
+  font-family: "Roboto", sans-serif;
   font-size: 0.5em;
+  color: #747474;
   padding: 5px;
   margin-top: 30px;
 }
 .customer__btn {
-  text-decoration: none;
-  border: none;
-  font-size: 0.7em;
-  color: white;
   background-color: #e83b89;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-size: 0.7em;
   width: 80px;
   height: 20px;
   margin: 0 auto;
-  border-radius: 2px;
 }
 
 .contact {
@@ -221,7 +237,9 @@
   .contact__formulaire {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin-top: 40px;
   }
 }
@@ -233,7 +251,9 @@
   padding-bottom: 14px;
 }
 .contact__description {
+  font-family: "Roboto", sans-serif;
   font-size: 0.5em;
+  color: #747474;
   margin: 15px auto;
 }
 @media (min-width: 768px) {
@@ -260,14 +280,14 @@
 }
 .contact__btn {
   background-color: #e83b89;
-  text-transform: uppercase;
-  font-size: 0.7em;
-  font-weight: 600;
   border: none;
   color: white;
+  border-radius: 2px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: 600;
   width: 27px;
   height: 27px;
-  border-radius: 2px;
 }
 
 .footer {

@@ -1,28 +1,28 @@
-@use '../abstracts/variables';
-@use '../abstracts/mixins';
+@use '../abstracts/variables' as*;
+@use '../abstracts/mixins' as*;
 
 .footer {
-    @include mixins.center;
+    @include center_col;
     width: 90%;
-    background-color: variables.$bgcolor-footer;
+    background-color: $bgcolor-footer;
     margin: 0 auto;
     gap: 12px;
     height: 80px;
     
     
     &__marque {
-        font-family: variables.$font-marque-footer;
-        color: variables.$color-marque-footer;
+        font-family: $font-marque;
+        color: $color-marque-footer;
         font-size: large;
         font-weight: bold;
     }
 
      &__span {
-            color: variables.$span-footer;
+            color: $span-footer;
         }
 
     &__copyright {
-        color: variables.$color-copyright-footer; 
+        color: $color-copyright-footer; 
         font-size: 0.6em;
         font-weight: bold;
     }    

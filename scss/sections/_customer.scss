@@ -1,32 +1,29 @@
 @use '../abstracts/variables' as*;
+@use '../abstracts/mixins' as*;
+@use '../base/buttons' as*;
+@use '../base/base' as*;
 
 .customer {
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    font-family: $font-customer;
+    @include center-col;
+   
     gap: 10px;
-
+    
     @media(min-width: 768px) {
-        display: flex;
-        flex-direction: row;    
+        @include center-row;
         margin: 30px auto;
         width: 80vw;
-     
+
     }
 
     &--club {
         background-image: url('/images/article-image-1.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include img;
     }
 
     &--actu {
         background-image: url('/images/article-image-2.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include img;
     }
 
     &__card {
@@ -35,13 +32,11 @@
         width: 80vw;
         margin: 0 auto;
         border-top-right-radius: 7px;
-        border-bottom-right-radius: 7px;        
+        border-bottom-right-radius: 7px;
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include center_col;
         text-align: center;
         height: auto;
         width: 123px;
@@ -51,34 +46,20 @@
 
 
     &__title {
-        text-transform: uppercase;
-        color: $color-font-customer;
-        font-size: 0.9em;
+       @include title; 
     }
 
     &__description {
         font-style: italic;
-        color: $color-font-customer;
-        font-size: 0.5em;
+       @include descrip;
         padding: 5px;
         margin-top: 30px;
     }
 
     &__btn {
-        text-decoration: none;
-        border: none;
-        font-size: 0.7em;
-        color: $color-link-customer;
-        background-color: $bgcolor-btn-customer;
+        @include button;
         width: 80px;
         height: 20px;
         margin: 0 auto;
-        border-radius: 2px;
     }
-
-
-
-
-
-
 }
