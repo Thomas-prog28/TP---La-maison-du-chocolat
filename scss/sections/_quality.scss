@@ -7,6 +7,7 @@
     text-align: center;
     gap: 25px;
     padding: 25px;
+
     @media(min-width: 768px) {
         @include center_row;
         margin-top: 10px;
@@ -23,15 +24,9 @@
         height: auto;
     }
 
-    &__title {
-        @include title;
-    }
-
-    &__description {
-        @include descrip;
+    &__description {        
         @media(min-width: 768px) {
             padding: 0 38px 0 38px;
-
         }
     }
 }

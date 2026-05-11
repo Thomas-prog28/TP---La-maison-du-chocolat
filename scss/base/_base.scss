@@ -1,1 +1,16 @@
+@use '../abstracts/variables' as *;
 
+
+
+p {
+    font-family: $font-global;
+    font-size: 0.5em;
+    color: $color-global;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: $color-global;
+    font-family: $font-global;
+}

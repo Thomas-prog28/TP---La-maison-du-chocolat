@@ -1,6 +1,6 @@
-@use '../abstracts/variables' as*;
-@use '../abstracts/mixins' as*;
-@use '../base/buttons' as*;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 
 .contact {
     margin: 60px auto;
@@ -26,7 +26,6 @@
     }
 
     &__description {
-        @include descrip;
         margin: 15px auto;
         @media(min-width: 768px) {
             padding: 0 80px 0 80px;

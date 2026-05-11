@@ -1,8 +1,8 @@
-@use '../abstracts/variables' as*;
-@use '../abstracts/mixins' as*;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .header {
-    margin: 20px;
+       margin: 20px;
     @media(min-width: 768px) {
         @include center_row;
         gap: 80px;
@@ -32,7 +32,7 @@
 
     &__link {
         text-decoration: none;
-        color: $color-font;
+        color: $color-global;
         font-family: $font-global;
         font-weight: 700;
         font-size: 0.6em;

@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 80px;
   }
 }
@@ -31,7 +30,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   list-style: none;
   gap: 10px;
 }
@@ -90,8 +88,8 @@
 }
 .hero__btn {
   background-color: #e83b89;
-  border: none;
   color: white;
+  border: none;
   border-radius: 2px;
   font-size: 0.7em;
   margin: 0 auto;
@@ -103,6 +101,19 @@
   .hero__btn {
     margin-bottom: 40px;
   }
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.5em;
+  color: #747474;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #747474;
+  font-family: "Roboto", sans-serif;
 }
 
 .quality {
@@ -119,7 +130,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin-top: 10px;
   }
 }
@@ -134,17 +144,6 @@
   margin: 0 auto;
   width: 20%;
   height: auto;
-}
-.quality__title {
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #747474;
-  font-family: "Roboto", sans-serif;
-}
-.quality__description {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.5em;
-  color: #747474;
 }
 @media (min-width: 768px) {
   .quality__description {
@@ -165,7 +164,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 30px auto;
     width: 80vw;
   }
@@ -201,24 +199,15 @@
   background-color: white;
   padding: 15px;
 }
-.customer__title {
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #747474;
-  font-family: "Roboto", sans-serif;
-}
 .customer__description {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.5em;
-  color: #747474;
   font-style: italic;
   padding: 5px;
   margin-top: 30px;
 }
 .customer__btn {
   background-color: #e83b89;
-  border: none;
   color: white;
+  border: none;
   border-radius: 2px;
   font-size: 0.7em;
   width: 80px;
@@ -238,7 +227,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 40px;
     margin-top: 40px;
   }
@@ -251,9 +239,6 @@
   padding-bottom: 14px;
 }
 .contact__description {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.5em;
-  color: #747474;
   margin: 15px auto;
 }
 @media (min-width: 768px) {
@@ -280,8 +265,8 @@
 }
 .contact__btn {
   background-color: #e83b89;
-  border: none;
   color: white;
+  border: none;
   border-radius: 2px;
   font-size: 0.7em;
   text-transform: uppercase;
@@ -311,9 +296,6 @@
   color: #e83b89;
 }
 .footer__copyright {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.5em;
-  color: #747474;
   font-weight: bold;
 }
 

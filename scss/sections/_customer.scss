@@ -1,7 +1,6 @@
-@use '../abstracts/variables' as*;
-@use '../abstracts/mixins' as*;
-@use '../base/buttons' as*;
-@use '../base/base' as*;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 
 .customer {
     @include center-col;
@@ -41,13 +40,7 @@
         padding: 15px;
     }
 
-
-    &__title {
-       @include title; 
-    }
-
     &__description {
-        @include descrip;
         font-style: italic;       
         padding: 5px;
         margin-top: 30px;

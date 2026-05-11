@@ -1,9 +1,0 @@
-@use '../abstracts/variables' as*;
-
-@mixin button {
-    background-color: $bgcolor-btn;
-    border: none;
-    color: $color-btn-titre;
-    border-radius: 2px;
-    font-size: 0.7em;
-}
